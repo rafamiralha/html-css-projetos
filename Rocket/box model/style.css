@@ -1,6 +1,8 @@
-div {
-    margin: 20px;
+*{
+    margin: 0;
 }
-span{
-    margin: 20px;
+div,section{
+    
+    border: 1px solid blue;
+    padding: 10px 20em 8px 50%;
 }
