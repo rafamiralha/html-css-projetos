@@ -3,6 +3,10 @@
 }
 div,section{
     
-    border: 1px solid blue;
-    padding: 10px 20em 8px 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20% auto;
+    border: red solid 10px;
+    outline: 10px green solid;
+    box-sizing: border-box;
 }
