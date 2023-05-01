@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+header{
+   /* border: 7px dashed red;
+    height: 100px;
+    padding: 16px;
+   */
+}
+main{
+    background-color: aqua;
+    background-image: url(https://img.freepik.com/fotos-premium/fundo-de-arte-de-formas-aleatorias-coloridas_627567-2775.jpg?w=826);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+}
