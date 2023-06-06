@@ -31,6 +31,7 @@
         
      </form>
      -->
+     <!-- Entrada de um dado email com exemplo de limitação do dominio com pattern
      <form action="">
         <input type="email"
         placeholder="Digite seu E-mail"
@@ -38,6 +39,23 @@
         title="Somente E-mail dentro do dominio será aceito!">
         <button type="submit">Enviar</button>
      </form>
-
+     -->
+     <!-- Como usar uma entrada de dado do tipo Url com alguns atributos como pattern
+     <form action="">
+        <input type="url"
+        placeholder="Digite uma URL"
+        pattern=".*\.com\.br.*"
+        title="Somente dominíos com .com.br serão aceitos"
+        required>
+        <button type="submit">Enviar</button>
+     </form>
+     -->
+     <!-- Ao usarmos o input type "file", temos que ter no forms estas configurações
+     <form action="" method="post" enctype="multipart/form-data">
+        <input type="file"
+        multiple
+        accept=".docx, .doc">
+     </form>
+     -->
 </body>
 </html>
