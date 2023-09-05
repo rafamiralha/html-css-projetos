@@ -1,0 +1,13 @@
+#container{
+    width: 360px;
+    height: 712px;
+    border: 1px solid blueviolet;
+  margin-left: auto;
+  margin-right: auto;
+  /*or use margin:auto*/
+}
+body{  
+    background:url(./assets/bg-mobile.jpg)no-repeat;
+    background-size: cover;
+  
+}
