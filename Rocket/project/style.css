@@ -6,8 +6,26 @@
   margin-right: auto;
   /*or use margin:auto*/
 }
+/* To use some fonts, follow the link below
+https://fonts.google.com/?preview.text_type=paragraph&stylecount=1 */
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
 body{  
     background:url(./assets/bg-mobile.jpg)no-repeat;
     background-size: cover;
   
+}
+
+/*
+Img is default in line, so if we try to put margin:auto it isn't works.
+*/
+#profile img {
+border: 1px solid purple;
+
+}
+/* To solve this problem for center the img, we must use text-align:center in the root profile */
+#profile {
+  text-align: center;
 }
