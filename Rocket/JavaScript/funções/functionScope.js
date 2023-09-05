@@ -9,7 +9,7 @@ function createThink(subject){
 
 console.log(createThink(subject))
 console.log(subject)
-/* About Scope, The 1st console.log will return "study" because it's  calledd in the function and the 2nd console.log will return what was defined before "Create video" 
+/* About Scope, The 1st console.log will return "study" because it's  called in the function and the 2nd console.log will return what was defined before "Create video" 
 */
 // function Hoisting
 
