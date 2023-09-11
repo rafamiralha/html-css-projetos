@@ -1,3 +1,11 @@
+/*
+The declaration bellow is used to reset the browser's settings.
+*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #container{
     width: 360px;
     height: 712px;
@@ -8,8 +16,12 @@
 }
 /* To use some fonts, follow the link below
 https://fonts.google.com/?preview.text_type=paragraph&stylecount=1 */
-h1{
+/* h1{
   font-family: 'Roboto', sans-serif;
+} */
+body *{
+  font-family: 'Inter', sans-serif;
+  color: #ffff;
 }
 
 body{  
@@ -22,10 +34,16 @@ body{
 Img is default in line, so if we try to put margin:auto it isn't works.
 */
 #profile img {
-border: 1px solid purple;
+height: 200px;
+width: 200px;
 
 }
 /* To solve this problem for center the img, we must use text-align:center in the root profile */
 #profile {
   text-align: center;
+}
+#profile p {
+  font-weight: 500;
+  font-size:16px;
+  line-height: 24px;
 }
