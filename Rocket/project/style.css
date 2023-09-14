@@ -51,3 +51,13 @@ width: 200px;
   line-height: 24px;
  margin-top:8px;
 }
+/* LINKS */
+ul{
+  list-style: none;
+  display: flex;/* this command change the way that items will be in the screen  */
+  flex-direction: column;
+  gap: 8px;/* this command make a space between the itens in the box */
+}
+ul li{
+  border: 1px white solid;
+}
