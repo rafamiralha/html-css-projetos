@@ -9,10 +9,9 @@ The declaration bellow is used to reset the browser's settings.
 #container{
     width: 360px;
     height: 712px;
-    padding: 56px;
-  margin-left: auto;
-  margin-right: auto;
-  /*or use margin:auto*/
+    padding: 0px 24;
+    margin: 56px auto 0px;
+
 }
 /* To use some fonts, follow the link below
 https://fonts.google.com/?preview.text_type=paragraph&stylecount=1 */
@@ -53,11 +52,31 @@ width: 200px;
 }
 /* LINKS */
 ul{
-  list-style: none;
-  display: flex;/* this command change the way that items will be in the screen  */
+ list-style: none;
+ display: flex;
+  /* this command change the way that items will be in the screen  */
   flex-direction: column;
-  gap: 8px;/* this command make a space between the itens in the box */
+  gap: 16px;/* this command make a space between the itens in the box */
 }
-ul li{
-  border: 1px white solid;
+
+ul li a{
+  display: flex;
+  padding: 16px 24px ;
+  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
+  justify-content: center;
+  /*this command will align the items horizontal  */
+  align-items: center;/*this command wil align  the items vertically  */
+  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));/*this command defines the color of the button */
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+/* pseudo-selector */
+ul li a:hover{
+  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--stroke-color-dark-mode, rgb(255, 255, 255));
+
 }
