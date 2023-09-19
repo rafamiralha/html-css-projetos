@@ -80,3 +80,12 @@ ul li a:hover{
   border: 1px solid var(--stroke-color-dark-mode, rgb(255, 255, 255));
 
 }
+#social-links{
+  display: flex;
+  padding: 24px;
+  height: 80px;
+  width: auto;
+  margin: 24px auto 16px;
+
+  border: 1px red solid;
+}
