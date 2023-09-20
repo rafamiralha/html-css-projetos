@@ -82,10 +82,13 @@ ul li a:hover{
 }
 #social-links{
   display: flex;
-  padding: 24px;
+  font-size: 40px;
+  padding: 24px 0;
   height: 80px;
   width: auto;
   margin: 24px auto 16px;
-
-  border: 1px red solid;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  
 }
