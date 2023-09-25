@@ -14,6 +14,7 @@ The declaration bellow is used to reset the browser's settings.
   --surface-color:rgba(255,255,255,0.05);
   --surface-color-hover:rgba(255,255,255,0.02);
   --highlight-color:rgba(255,255,255,0.1);
+  --switch-bg-url:url(./assets/moon-stars.svg);
 }
 .light{
   --text-color:black;
@@ -22,6 +23,7 @@ The declaration bellow is used to reset the browser's settings.
   --surface-color:rgba(0,0,0,0.05);
   --surface-color-hover:rgba(255,255,255,0.02);
   --highlight-color:rgba(0,0,0,0.1);
+  --switch-bg-url:url(./assets/sun.svg);
 }
 #container{
     width: 360px;
@@ -50,6 +52,7 @@ body{
 /*
 Img is default in line, so if we try to put margin:auto it isn't works.
 */
+/* Profile */
 #profile img {
 height: 200px;
 width: 200px;
@@ -68,6 +71,32 @@ width: 200px;
   line-height: 24px;
  margin-top:8px;
 }
+/* Switch */
+
+#switch{
+  border: 1px solid red;
+  position: relative;
+}
+#switch button{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  position: absolute;
+  z-index: 1;
+/* position and z-index are used to allow an item to be in "other layer" of CSS */
+}
+#switch span{
+  display: block;
+  height: 24px;
+  width: 64px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
 /* LINKS */
 ul{
  list-style: none;
