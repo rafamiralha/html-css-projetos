@@ -25,6 +25,11 @@ The declaration bellow is used to reset the browser's settings.
   --highlight-color:rgba(0,0,0,0.1);
   --switch-bg-url:url(./assets/sun.svg);
 }
+.light #switch button{
+  right:0;
+  left: initial;
+}
+/* I've used this atributtes to change the direction of the button */
 #container{
     width: 360px;
     height: 712px;
