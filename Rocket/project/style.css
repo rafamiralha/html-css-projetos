@@ -74,8 +74,11 @@ width: 200px;
 /* Switch */
 
 #switch{
-  border: 1px solid red;
-  position: relative;
+
+  position: relative;  
+  height: 24px;
+  width: 64px;
+  margin: 4px auto;
 }
 #switch button{
   height: 32px;
@@ -86,6 +89,9 @@ width: 200px;
   position: absolute;
   z-index: 1;
 /* position and z-index are used to allow an item to be in "other layer" of CSS */
+transform: translateY(-50%);
+top: 50%;
+/* transform is used to replace an absolute item that is relative to another one */
 }
 #switch span{
   display: block;
