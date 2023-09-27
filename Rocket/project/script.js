@@ -10,11 +10,11 @@ body.classList.toggle("light")
 // }
 const img = document.querySelector("#profile img")
 if (body.classList.contains('light')){
-img.setAttribute('src', './assets/avatar-light.png')
-img.setAttribute('alt','Imagem de fundo azul com homem de óculos escuro sorrindo')
+img.setAttribute('src', './assets/avatar-lightmode.png')
+img.setAttribute('alt','Imagem de fundo com homem fone de ouvido branco sorrindo')
 }else{
-img.setAttribute('src','./assets/avatar.png')
-img.setAttribute('alt','Imagem de fundo amarelo com homem sorrindo')
+img.setAttribute('src','./assets/avatar1.png')
+img.setAttribute('alt','Imagem de fundo de uma praça ilumindada de noite com homem olhando para o lado')
 }
 //how I changed the avatar img
 
