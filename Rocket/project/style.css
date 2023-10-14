@@ -26,8 +26,7 @@ The declaration bellow is used to reset the browser's settings.
   --switch-bg-url:url(./assets/sun.svg);
 }
 .light #switch button{
-  right:0;
-  left: initial;
+animation: slide-in 0.4s forwards;
 }
 /* I've used this atributtes to change the direction of the button */
 #container{
@@ -93,6 +92,7 @@ width: 200px;
   border-radius: 50%;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
+  animation: slide-out 0.4s forwards;
   position: absolute;
   z-index: 1;
 /* position and z-index are used to allow an item to be in "other layer" of CSS */
@@ -178,4 +178,20 @@ padding: 24px 0;
 .light{
   --bg-url: url(./assets/bg-desktop-light.jpg); 
 }
+}
+@keyframes slide-in{
+  from{
+    left:0;
+  }
+  to{
+    left:50%;
+  }
+}
+@keyframes slide-out{
+  from{
+    left:50%;
+  }
+  to{
+    left:0;
+  }
 }
