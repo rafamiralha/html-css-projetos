@@ -31,7 +31,8 @@ The declaration bellow is used to reset the browser's settings.
 }
 /* I've used this atributtes to change the direction of the button */
 #container{
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     height: 712px;
     padding: 0px 24;
     margin: 56px auto 0px;
