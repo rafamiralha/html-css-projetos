@@ -1,3 +1,4 @@
+ /* posicionamento básico do menu e formatação do texto */
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,16 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+  }
+
+ 
   header{
     position: fixed;
     top: 0;
@@ -34,11 +45,23 @@
     font-weight: 400;
     margin-left: 40px;
 }
+/*estiliza o efeito de passada de mouse nos links do menu*/
   .navigation a::after{
     content:'';
     position: absolute;
     left: 0;
     bottom: -6px;
+  background: rgb(165, 154, 154);
+    width: 100%;
+    height: 3px;
+    border-radius: 6px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s;
+  }
+  .navigation a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
   }
 
 /*estilização do botão de login*/
