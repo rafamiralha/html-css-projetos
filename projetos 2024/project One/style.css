@@ -11,14 +11,16 @@
     font-style: normal;
   }
 
-  .body{
+  body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('C:\Users\Rafael\Documents\GitHub\html-css-projetos\projetos 2024\project One\background.jpg') no-repeat;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
   }
-
  
   header{
     position: fixed;
@@ -26,7 +28,7 @@
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: aliceblue;
+ 
     justify-content: space-between;
     display: flex;
     align-items: center;
