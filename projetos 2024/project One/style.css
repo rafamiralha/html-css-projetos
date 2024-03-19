@@ -84,3 +84,12 @@
 .navigation .btnLogin:hover{
     background-color: rgb(165, 154, 154);
 }
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgb(165, 154, 154, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
